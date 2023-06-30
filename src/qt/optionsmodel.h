@@ -74,7 +74,7 @@ public:
         Listen,                 // bool
         UseChangeAddress,       // bool
         CheckForUpdates,        // bool
-        ReserveBalance,         // CAmount
+//        ReserveBalance,         // CAmount
         Theme,                  // QString
         HWIToolPath,            // QString
         SignPSBTWithHWITool,    // bool
