@@ -373,7 +373,7 @@ public Q_SLOTS:
     /** Update ledger icon **/
     void updateLedgerIcon();
     /** Update staking icon **/
-    void updateStakingIcon();
+    //void updateStakingIcon();
 #endif // ENABLE_WALLET
 
     /** called by a timer to check if ShutdownRequested() has been set **/

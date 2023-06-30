@@ -127,7 +127,7 @@ int SuperStakerItemWidget::position() const
 {
     return m_position;
 }
-
+/*
 void SuperStakerItemWidget::updateLogo()
 {
     if(!m_model || !m_clientModel)
@@ -198,6 +198,7 @@ void SuperStakerItemWidget::updateLogo()
             ui->superStakerLogo->setToolTip(tr("Not staking"));
     }
 }
+*/
 
 void SuperStakerItemWidget::setModel(WalletModel *_model)
 {

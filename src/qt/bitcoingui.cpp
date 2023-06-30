@@ -210,10 +210,10 @@ BitcoinGUI::BitcoinGUI(interfaces::Node& node, const PlatformStyle *_platformSty
     if (gArgs.GetBoolArg("-staking", true))
     {
         timerStakingIcon = new QTimer(labelStakingIcon);
-        connect(timerStakingIcon, SIGNAL(timeout()), this, SLOT(updateStakingIcon()));
+        connect(timerStakingIcon, SIGNAL(timeout()), this, SLOT(void));
         timerStakingIcon->start(1000);
 
-        updateStakingIcon();
+        //updateStakingIcon();
     }
     else
     {
@@ -1706,7 +1706,7 @@ void BitcoinGUI::updateLedgerIcon()
         labelLedgerIcon->setVisible(false);
     }
 }
-
+/*
 void BitcoinGUI::updateStakingIcon()
 {
     if(m_node.shutdownRequested() || !clientModel || clientModel->fBatchProcessingMode)
@@ -1774,6 +1774,7 @@ void BitcoinGUI::updateStakingIcon()
             labelStakingIcon->setToolTip(tr("Not staking"));
     }
 }
+*/
 #endif // ENABLE_WALLET
 
 void BitcoinGUI::detectShutdown()

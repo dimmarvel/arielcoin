@@ -78,7 +78,7 @@ namespace {
 const QStringList historyFilter = QStringList()
     << "importprivkey"
     << "importmulti"
-    << "sethdseed"
+    //<< "sethdseed"
     << "signmessagewithprivkey"
     << "signrawtransactionwithkey"
     << "signrawsendertransactionwithkey"

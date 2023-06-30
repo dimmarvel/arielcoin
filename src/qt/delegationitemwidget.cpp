@@ -184,12 +184,12 @@ void DelegationItemWidget::updateLogo()
     }
     else
     {
-        if(d->blockHight < 0)
-            ui->delegationLogo->setToolTip(tr("Not staking because the delegation is not confirmed"));
-        else if (!nWeight)
-            ui->delegationLogo->setToolTip(tr("Not staking because you don't have mature coins"));
-        else
-            ui->delegationLogo->setToolTip(tr("Not staking"));
+        // if(d->blockHight < 0)
+        //     ui->delegationLogo->setToolTip(tr("Not staking because the delegation is not confirmed"));
+        // else if (!nWeight)
+        //     ui->delegationLogo->setToolTip(tr("Not staking because you don't have mature coins"));
+        // else
+        //     ui->delegationLogo->setToolTip(tr("Not staking"));
     }
 
     switch (d->status)
